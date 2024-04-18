@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(14, 17, 23);
+    color: white;
+    font-family: 'geologica', sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+.title2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 8rem;
+    width: 70%;
+    margin-bottom: 5rem;
+}
+
+.back{
+    padding:1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: .3rem;
+    color: white;
+    background-color: #262730;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+}
+
+.back:active{
+    background-color: #ab0927;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top:3rem;
+}
+
+.matric, .name, .submit{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #262730;
+    border: none;
+    border-radius: .3rem;
+}
+
+input::placeholder{
+    font-family:'geologica', sans-serif;
+}
+
+.message::placeholder{
+    font-family:'geologica', sans-serif;
+}
+
+input{
+    color: white;
+}
+
+.message{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    height: 12rem;
+    background-color: #262730;
+    border: none;
+    border-radius: .3rem;
+}
+
+.submit{
+    background-color: #ab0927;
+    font-family: 'geologia', sans-serif;
+    color: white;
+    cursor:pointer;
+    transition: .4s ease-in-out;
+}
+
+.submit:hover{
+    opacity: 0.8;
+}
+
+.matric:focus, .name:focus, .message:focus{
+    outline:1.5px solid #ab0927;
+}
+
+@media all and (max-width:768px){
+    .container{
+        padding: 0;
+        margin: 20px;
+    }
+
+    input{
+        width: 100%;
+    }
+}
